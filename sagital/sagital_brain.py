@@ -31,13 +31,4 @@ def run_averages(file_input, file_output):
     with open(file_output, 'w') as myoutput:
              myoutput.write(','.join(sagital_averages) +  '\n')
 
-if __name__ == "__main__":
-    import sys
-    argumens = sys.argv
-    file_input = None
-    file_output = None
-    if len(argumens) > 1:
-         file_input = sys.argv[1]
-    if len(argumens) > 2:
-         file_output = sys.argv[2]
-    run_averages(file_input, file_output)
+
